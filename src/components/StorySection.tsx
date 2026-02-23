@@ -24,7 +24,7 @@ const StorySection = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Tudo começou quando dois irmãos gêmeos decidiram largar a estabilidade do emprego CLT para empreender. Com uma única máquina, pouco dinheiro e muita fé, eles mergulharam no universo da higienização profissional de estofados.
+                Tudo começou quando dois irmãos (gêmeos) decidiram largar a estabilidade do emprego CLT para empreender. Com uma única máquina, pouco dinheiro e muita fé, eles mergulharam no universo da higienização profissional de estofados.
               </p>
               <p>
                 Trabalharam dia e noite, de casa em casa, conquistando cada cliente com honestidade, dedicação e um serviço que realmente fazia diferença na vida das famílias.
