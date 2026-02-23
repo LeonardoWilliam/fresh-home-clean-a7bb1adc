@@ -5,7 +5,7 @@ const WHATSAPP_URL = "https://wa.me/5500000000000?text=Olá! Gostaria de agendar
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <img
         src={heroImage}
         alt="Sala de estar limpa e higienizada"

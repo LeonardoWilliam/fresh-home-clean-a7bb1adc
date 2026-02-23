@@ -3,7 +3,7 @@ import { ShieldCheck } from "lucide-react";
 
 const GuaranteeSection = () => {
   return (
-    <section className="py-20 bg-background">
+    <section id="garantia" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="relative rounded-2xl overflow-hidden shadow-2xl">

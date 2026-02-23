@@ -20,7 +20,7 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-20 section-gradient">
+    <section id="depoimentos" className="py-20 section-gradient">
       <div className="container mx-auto px-4">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
