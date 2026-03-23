@@ -1,4 +1,4 @@
-import { Star } from "lucide-react";
+import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
@@ -20,35 +20,41 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section id="depoimentos" className="py-20 section-gradient">
+    <section id="depoimentos" className="py-24 section-gradient relative overflow-hidden">
+      <div className="absolute top-0 right-0 w-80 h-80 bg-primary/5 rounded-full blur-3xl" />
+      
       <div className="container mx-auto px-4">
-        <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
+        <div className="text-center mb-16">
+          <span className="inline-block text-xs font-bold uppercase tracking-widest text-primary mb-4 px-4 py-1.5 rounded-full bg-primary/10">
+            Depoimentos
+          </span>
+          <h2 className="text-3xl md:text-5xl font-heading font-black text-foreground mb-6">
             O que nossos <span className="text-primary">clientes</span> dizem
           </h2>
-          <div className="flex justify-center gap-1 mb-2">
+          <div className="flex justify-center gap-1.5 mb-3">
             {[...Array(5)].map((_, i) => (
-              <Star key={i} className="w-6 h-6 text-yellow-400 fill-yellow-400" />
+              <Star key={i} className="w-7 h-7 text-yellow-400 fill-yellow-400" />
             ))}
           </div>
           <p className="text-muted-foreground text-sm">Avaliação 5 estrelas</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="bg-card rounded-2xl p-6 shadow-md border border-border hover:shadow-lg transition-shadow"
+              className="group bg-card rounded-3xl p-8 shadow-sm border border-border hover:shadow-xl hover:border-primary/20 hover:-translate-y-2 transition-all duration-300 relative"
             >
-              <div className="flex gap-1 mb-3">
+              <Quote className="absolute top-6 right-6 w-8 h-8 text-primary/10 group-hover:text-primary/20 transition-colors" />
+              <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, j) => (
                   <Star key={j} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
                 ))}
               </div>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-4">"{t.text}"</p>
-              <div className="border-t border-border pt-3">
-                <p className="font-heading font-bold text-sm text-foreground">{t.name}</p>
-                <p className="text-xs text-accent font-semibold">{t.highlight}</p>
+              <p className="text-muted-foreground text-sm leading-relaxed mb-6">"{t.text}"</p>
+              <div className="border-t border-border pt-4">
+                <p className="font-heading font-bold text-foreground">{t.name}</p>
+                <p className="text-xs text-accent font-bold mt-1">{t.highlight}</p>
               </div>
             </div>
           ))}
