@@ -38,7 +38,7 @@ const HeroSection = () => {
           href={WHATSAPP_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 bg-whatsapp text-whatsapp-foreground px-10 py-5 rounded-full text-lg font-heading font-bold shadow-2xl hover:shadow-[0_20px_60px_-15px_hsl(142_70%_40%_/_0.5)] transition-all duration-300 hover:scale-105 fade-in-up"
+          className="inline-flex items-center gap-3 bg-whatsapp text-white px-10 py-5 rounded-full text-lg font-heading font-bold shadow-2xl hover:text-green-400 hover:shadow-[0_20px_60px_-15px_hsl(142_70%_40%_/_0.5)] transition-all duration-300 hover:scale-105 fade-in-up"
           style={{ animationDelay: '0.4s' }}
         >
           <MessageCircle className="w-6 h-6" />

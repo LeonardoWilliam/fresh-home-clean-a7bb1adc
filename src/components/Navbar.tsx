@@ -55,7 +55,7 @@ const Navbar = () => {
           href={WHATSAPP_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:inline-flex items-center gap-2 bg-whatsapp text-whatsapp-foreground px-5 py-2.5 rounded-full text-sm font-bold hover:opacity-90 transition-all shadow-md hover:shadow-lg hover:scale-105"
+          className="hidden md:inline-flex items-center gap-2 bg-whatsapp text-white px-5 py-2.5 rounded-full text-sm font-bold hover:text-green-400 transition-all shadow-md hover:shadow-lg hover:scale-105"
         >
           <MessageCircle className="w-4 h-4" />
           Agendar Agora
