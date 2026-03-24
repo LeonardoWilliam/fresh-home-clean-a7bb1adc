@@ -1,4 +1,4 @@
-import { MessageCircle, Instagram, MapPin, Phone } from "lucide-react";
+import { Instagram, Facebook, Mail, Phone, MessageCircle } from "lucide-react";
 
 const FooterSection = () => {
   return (
@@ -12,22 +12,39 @@ const FooterSection = () => {
             </p>
           </div>
           <div>
-            <h4 className="font-heading font-semibold text-sm text-background mb-3 uppercase tracking-wide">Navegação</h4>
+            <h4 className="font-heading font-semibold text-sm text-background mb-3 uppercase tracking-wide">Informações</h4>
             <ul className="space-y-2">
-              {["Início", "Sobre", "Benefícios", "Depoimentos", "Garantia"].map((item) => (
-                <li key={item}>
-                  <a href={`#${item.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`} className="text-background/50 text-sm hover:text-background transition-colors">
-                    {item}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a href="#" className="text-background/50 text-sm hover:text-background transition-colors">
+                  Dúvidas Frequentes
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-background/50 text-sm hover:text-background transition-colors">
+                  Política de Privacidade
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-background/50 text-sm hover:text-background transition-colors">
+                  Termos de Segurança
+                </a>
+              </li>
             </ul>
           </div>
           <div>
-            <h4 className="font-heading font-semibold text-sm text-background mb-3 uppercase tracking-wide">Contato</h4>
-            <div className="space-y-2">
-              <a href="https://wa.me/5500000000000" className="flex items-center gap-2 text-background/50 text-sm hover:text-background transition-colors">
-                <MessageCircle className="w-4 h-4" /> WhatsApp
+            <h4 className="font-heading font-semibold text-sm text-background mb-3 uppercase tracking-wide">Redes Sociais</h4>
+            <div className="space-y-3">
+              <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-background/50 text-sm hover:text-background transition-colors">
+                <Instagram className="w-4 h-4" /> Instagram
+              </a>
+              <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-background/50 text-sm hover:text-background transition-colors">
+                <Facebook className="w-4 h-4" /> Facebook
+              </a>
+              <a href="mailto:contato@gemeosclean.com.br" className="flex items-center gap-2 text-background/50 text-sm hover:text-background transition-colors">
+                <Mail className="w-4 h-4" /> E-mail de Atendimento
+              </a>
+              <a href="tel:+5500000000000" className="flex items-center gap-2 text-background/50 text-sm hover:text-background transition-colors">
+                <Phone className="w-4 h-4" /> Central de Atendimento
               </a>
             </div>
           </div>
