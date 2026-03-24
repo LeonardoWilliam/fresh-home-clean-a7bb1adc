@@ -34,6 +34,9 @@ const FooterSection = () => {
           <div>
             <h4 className="font-heading font-semibold text-sm text-background mb-3 uppercase tracking-wide">Redes Sociais</h4>
             <div className="space-y-3">
+              <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-background/50 text-sm hover:text-background transition-colors">
+                <MessageCircle className="w-4 h-4" /> WhatsApp
+              </a>
               <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-background/50 text-sm hover:text-background transition-colors">
                 <Instagram className="w-4 h-4" /> Instagram
               </a>
