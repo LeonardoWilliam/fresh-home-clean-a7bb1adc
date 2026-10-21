@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
+import logoAsset from "@/assets/logo-gemeos-clean.jpeg.asset.json";
 
 const WHATSAPP_URL = "https://wa.me/5500000000000?text=Olá! Gostaria de agendar uma higienização.";
 
@@ -24,10 +25,13 @@ const Navbar = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-background/95 backdrop-blur-lg shadow-lg border-b border-border/50' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4 flex items-center justify-between py-3">
-        <a href="#inicio" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
-            <span className="text-primary-foreground font-heading font-black text-lg">G</span>
-          </div>
+        <a href="#inicio" className="flex items-center gap-3 group">
+          <img
+            src={logoAsset.url}
+            alt="Logo Gêmeos Clean - Higienização de Estofados"
+            className="w-11 h-11 md:w-12 md:h-12 rounded-xl object-cover shadow-md group-hover:shadow-lg group-hover:scale-105 transition-all"
+            loading="eager"
+          />
           <div className="flex flex-col leading-none">
             <span className={`font-heading font-black text-lg tracking-tight transition-colors ${scrolled ? 'text-primary' : 'text-primary-foreground'}`}>
               Gêmeos Clean
